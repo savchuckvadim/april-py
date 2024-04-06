@@ -12,11 +12,11 @@ class TestView(APIView):
     def get(self, request, *args, **kwargs):
         phrase = request.GET.get('phrase', 'В космосе существует множество галактик и созвездий')
         input_ids = tokenizer.encode(phrase, return_tensors="pt")
-        max_length = 150
+        max_length = 50
         output_sequences = model.generate(
             input_ids=input_ids,
             max_length=max_length,
-            temperature=1.5,  # Температура генерации, измените для разных стилей генерации
+            temperature=1,  # Температура генерации, измените для разных стилей генерации
             do_sample=True,  # Включить сэмплирование; выключить для использования жадного декодирования
             top_k=50,  # Использовать только top_k токенов на каждом шаге
             top_p=0.95,  # Использовать только вероятные токены с общей вероятностью top_p
