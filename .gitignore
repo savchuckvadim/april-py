@@ -1,0 +1,18 @@
+*.pyc
+__pycache__/
+db.sqlite3
+/static
+/media
+
+# Если вы используете другую СУБД, добавьте файлы базы данных в .gitignore
+*.log
+*.pot
+*.pyd
+*.so
+*.swp
+
+# Директория виртуального окружения
+myprojectenv/
+
+# Файлы секретов
+.env
