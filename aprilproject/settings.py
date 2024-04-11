@@ -26,8 +26,12 @@ SECRET_KEY = 'django-insecure-&n(8!87czuxoj_+7q$747*d3_(ivr$1_@r4co1=b_0!09-mle_
 DEBUG = True
 
 ALLOWED_HOSTS = [
+<<<<<<< HEAD
     '*'
     '62.113.108.135',
+=======
+    '127.0.0.1',
+>>>>>>> 6d107c7d5b6d295cb6b6c4f17cc1c0598a7359a2
     'garant-app.ru',
     'www.garant-app.ru'
     
